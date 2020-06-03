@@ -1,5 +1,6 @@
 export class Tab_Cest{
-    id: string;
+    id: number;
+    cest: string;
     ncm: string;
     descricao: string;
 }

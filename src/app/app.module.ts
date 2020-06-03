@@ -26,7 +26,7 @@ import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 import { EstadoPrimengComponent } from './views/estado-primeng/estado-primeng.component';
 import { CidadePrimengComponent } from './views/cidade-primeng/cidade-primeng.component';
-import { Tab_CestPrimengComponent } from './views/tab_cest-primeng/tab_cest-primeng.component';
+import { Tab_CestComponent } from './views/tab_cest/tab_cest.component';
 import { MegaMenuModule } from 'primeng/megamenu';
 import {InputTextModule} from 'primeng/inputtext';
 
@@ -55,7 +55,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     PessoaComponent,
     EstadoPrimengComponent,
     CidadePrimengComponent,
-    Tab_CestPrimengComponent,
+    Tab_CestComponent,
   ],
 
   imports: [

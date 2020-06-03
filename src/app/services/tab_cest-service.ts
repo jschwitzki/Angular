@@ -4,7 +4,7 @@ import { Tab_Cest } from './tab_cest';
 
 @Injectable()
 export class Tab_CestService {
-    baseUrl: string = 'https://kestoqueapi.herokuapp.com/tabs_cest';
+    baseUrl: string = 'https://kestoque-api.herokuapp.com/tabs_cest';
 
     constructor(private http: HttpClient) { } 
 

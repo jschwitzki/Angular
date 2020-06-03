@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { Tab_CestPrimengComponent } from './tab_cest-primeng.component';
+import { Tab_CestComponent } from './tab_cest.component';
 
-describe('Tab_CestPrimengComponent', () => {
-  let component: Tab_CestPrimengComponent;
-  let fixture: ComponentFixture<Tab_CestPrimengComponent>;
+describe('Tab_CestComponent', () => {
+  let component: Tab_CestComponent;
+  let fixture: ComponentFixture<Tab_CestComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Tab_CestPrimengComponent ]
+      declarations: [ Tab_CestComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Tab_CestPrimengComponent);
+    fixture = TestBed.createComponent(Tab_CestComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

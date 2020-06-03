@@ -1,0 +1,18 @@
+<p-table [value]="tab_cests">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>ID</th>
+            <th>Cest</th>
+            <th>Ncm</th>         
+            <th>Descrição</th>         
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-tab_cest>
+        <tr>
+            <td>{{tab_cest.id}}</td>
+            <td>{{tab_cest.cest}}</td>
+            <td>{{tab_cest.ncm}}</td>         
+            <td>{{tab_cest.descricao}}</td>         
+        </tr>
+    </ng-template>
+</p-table>
