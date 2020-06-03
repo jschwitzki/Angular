@@ -1,0 +1,16 @@
+main {
+    padding: 30px;
+    margin-left: 30vh;
+    width: 100%;
+    display: flex;
+}
+
+#form {
+    width: 100%;
+    background-color: rgba(0,0,0,0.01);
+    padding: 30px 50px 70px 50px;
+}
+
+.full-width {
+    width: 300px;
+}

@@ -5,7 +5,10 @@ import { MenuComponent } from './menu/menu.component';
 import { EstadoComponent } from './views/estado/estado.component';
 import { AppRoutes} from './app.routes';
 import { CidadeComponent } from './views/cidade/cidade.component';
+import { PessoaComponent } from './views/pessoa/pessoa.component';
 import { EstadoService } from './services/estado-service';
+import { CidadeService } from './services/cidade-service';
+import { Tab_CestService } from './services/tab_cest-service';
 import { HttpClientModule } from '@angular/common/http';
 
 //exigidos pelo primeng
@@ -17,13 +20,30 @@ import { AccordionModule } from 'primeng/accordion';     //accordion and accordi
 import { PanelModule } from 'primeng/panel';
 import { HomeComponent } from './views/home/home.component';
 import { ToolbarModule } from 'primeng/toolbar';
-import { CidadeService } from './services/cidade-service';
 import { TableModule } from 'primeng/table';
 import { VirtualScrollerModule } from 'primeng/virtualscroller';
 import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 import { EstadoPrimengComponent } from './views/estado-primeng/estado-primeng.component';
 import { CidadePrimengComponent } from './views/cidade-primeng/cidade-primeng.component';
+import { Tab_CestPrimengComponent } from './views/tab_cest-primeng/tab_cest-primeng.component';
+import { MegaMenuModule } from 'primeng/megamenu';
+import {InputTextModule} from 'primeng/inputtext';
+
+
+//material
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
+
+
 
 @NgModule({
   declarations: [
@@ -32,8 +52,10 @@ import { CidadePrimengComponent } from './views/cidade-primeng/cidade-primeng.co
     EstadoComponent,
     CidadeComponent,
     HomeComponent,
+    PessoaComponent,
     EstadoPrimengComponent,
     CidadePrimengComponent,
+    Tab_CestPrimengComponent,
   ],
 
   imports: [
@@ -52,10 +74,21 @@ import { CidadePrimengComponent } from './views/cidade-primeng/cidade-primeng.co
     TableModule,
     VirtualScrollerModule,
     MenuModule,
-    MenubarModule
+    MenubarModule,
+    MegaMenuModule,
+    InputTextModule,
+    MatInputModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatSliderModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    MatDatepickerModule,
   ],
 
-  providers: [EstadoService, CidadeService],
+  providers: [EstadoService, CidadeService, Tab_CestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

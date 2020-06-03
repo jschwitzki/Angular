@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {MenuItem} from 'primeng/api';
+import {MegaMenuItem, MenuItem} from 'primeng/api';
+
 
 @Component({
   selector: 'app-menu',
@@ -17,27 +18,17 @@ export class MenuComponent implements OnInit {
             label: 'Home', icon: 'pi pi-fw pi-times',  routerLink: ['/']
         },
         {
-            label: 'Consultas',
-            icon: 'pi pi-fw pi-file',
-            items: [
-                {
-                    label: 'Estados', 
-                    icon: 'pi pi-fw pi-plus',
-                    items: [      
-                        {label: 'Estados primeng',  routerLink: ['/estados_primeng']},   
-                    ]
-                },
-                {
-                    label: 'Cidades', 
-                    icon: 'pi pi-fw pi-plus',
-                    items: [
-                       
-                        {label: 'Cidades primeng', routerLink: ['/cidades_primeng']},   
-                    ]
-                }
-               
-            ]
-        }
+            label: 'Estados primeng',  routerLink: ['/estados_primeng']
+        },
+        {
+            label: 'Cidades primeng', routerLink: ['/cidades_primeng']
+        },    
+        {
+            label: 'Pessoa', routerLink: ['/pessoas']
+        },
+        {
+            label: 'Tab_Cest', routerLink: ['/tab_cests']
+        },   
     ];
 }
 }

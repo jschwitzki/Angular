@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Estado } from 'src/app/services/estado';
 import { EstadoService } from 'src/app/services/estado-service';
 
-
-
 @Component({
   selector: 'app-estado-primeng',
   templateUrl: './estado-primeng.component.html',
